@@ -8,16 +8,16 @@ namespace ModSettings {
 
 		private static ChoiceAttribute Localized(params string[] names) => new ChoiceAttribute(names) { Localize = true };
 		private static readonly Dictionary<Type, ChoiceAttribute> predefinedHinterlandEnums = new Dictionary<Type, ChoiceAttribute>() {
-			{ typeof(CustomTunableDayNightMultiplier), Localized("GAMEPLAY_OneX", "GAMEPLAY_TwoX", "GAMEPLAY_ThreeX", "GAMEPLAY_FourX") },
-			{ typeof(CustomTunableDistance),           Localized("GAMEPLAY_DistanceClose", "GAMEPLAY_DistanceMedium", "GAMEPLAY_DistanceFar") },
-			{ typeof(CustomTunableLMH),                Localized("GAMEPLAY_Low", "GAMEPLAY_Medium", "GAMEPLAY_High") },
-			{ typeof(CustomTunableLMHV),               Localized("GAMEPLAY_Low", "GAMEPLAY_Medium", "GAMEPLAY_High", "GAMEPLAY_VeryHigh") },
-			{ typeof(CustomTunableNLH),                Localized("GAMEPLAY_None", "GAMEPLAY_Low", "GAMEPLAY_High") },
-			{ typeof(CustomTunableNLMH),               Localized("GAMEPLAY_None", "GAMEPLAY_Low", "GAMEPLAY_Medium", "GAMEPLAY_High") },
-			{ typeof(CustomTunableNLMHV),              Localized("GAMEPLAY_None", "GAMEPLAY_Low", "GAMEPLAY_Medium", "GAMEPLAY_High", "GAMEPLAY_VeryHigh") },
-			{ typeof(CustomTunableTimeOfDay),          Localized("GAMEPLAY_Dawn", "GAMEPLAY_Noon", "GAMEPLAY_Dusk", "GAMEPLAY_Midnight", "GAMEPLAY_Random") },
-			{ typeof(CustomTunableWeather),            Localized("GAMEPLAY_WeatherClear", "GAMEPLAY_WeatherLightSnow", "GAMEPLAY_WeatherHeavySnow",
-			                                                     "GAMEPLAY_WeatherBlizzard", "GAMEPLAY_WeatherLightFog", "GAMEPLAY_WeatherHeavyFog", "GAMEPLAY_Random") }
+			//{ typeof(CustomTunableDayNightMultiplier), Localized("GAMEPLAY_OneX", "GAMEPLAY_TwoX", "GAMEPLAY_ThreeX", "GAMEPLAY_FourX") },
+			//{ typeof(CustomTunableDistance),           Localized("GAMEPLAY_DistanceClose", "GAMEPLAY_DistanceMedium", "GAMEPLAY_DistanceFar") },
+			//{ typeof(CustomTunableLMH),                Localized("GAMEPLAY_Low", "GAMEPLAY_Medium", "GAMEPLAY_High") },
+			//{ typeof(CustomTunableLMHV),               Localized("GAMEPLAY_Low", "GAMEPLAY_Medium", "GAMEPLAY_High", "GAMEPLAY_VeryHigh") },
+			//{ typeof(CustomTunableNLH),                Localized("GAMEPLAY_None", "GAMEPLAY_Low", "GAMEPLAY_High") },
+			//{ typeof(CustomTunableNLMH),               Localized("GAMEPLAY_None", "GAMEPLAY_Low", "GAMEPLAY_Medium", "GAMEPLAY_High") },
+			//{ typeof(CustomTunableNLMHV),              Localized("GAMEPLAY_None", "GAMEPLAY_Low", "GAMEPLAY_Medium", "GAMEPLAY_High", "GAMEPLAY_VeryHigh") },
+			//{ typeof(CustomTunableTimeOfDay),          Localized("GAMEPLAY_Dawn", "GAMEPLAY_Noon", "GAMEPLAY_Dusk", "GAMEPLAY_Midnight", "GAMEPLAY_Random") },
+			//{ typeof(CustomTunableWeather),            Localized("GAMEPLAY_WeatherClear", "GAMEPLAY_WeatherLightSnow", "GAMEPLAY_WeatherHeavySnow",
+			//                                                     "GAMEPLAY_WeatherBlizzard", "GAMEPLAY_WeatherLightFog", "GAMEPLAY_WeatherHeavyFog", "GAMEPLAY_Random") }
 		};
 
 		internal static readonly ChoiceAttribute YesNoAttribute = Localized("GAMEPLAY_No", "GAMEPLAY_Yes");
